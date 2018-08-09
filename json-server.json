@@ -1,0 +1,7 @@
+{
+  "host": "192.168.1.108",
+  "port": "3003",
+  "watch": false,
+  "delay": 500,
+  "quiet": true
+}

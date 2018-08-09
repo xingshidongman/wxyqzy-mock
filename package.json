@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "mock-json": "json-server db.json --port 3003",
-    "mock": "json-server db.js --host 192.168.1.108 --port 3003"
+    "mock": "json-server db.js"
   },
   "keywords": [],
   "author": "",
