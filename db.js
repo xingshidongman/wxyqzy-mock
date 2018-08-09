@@ -1,8 +1,9 @@
 const bodyParts = require('./bodyParts')
-// const users = require('./users')
+const illness = require('./illness')
 
 module.exports = function () {
   return {
-    body_parts: bodyParts()
+    body_parts: bodyParts(),
+    illness: illness()
   }
 }

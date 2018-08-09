@@ -1,23 +1,5 @@
-let Mock = require('mockjs');
-let Random = Mock.Random;
-
-/**
- * 获取病症
- * @param i
- * @returns {{}}
- */
-function getIllness(i) {
-  let data = []
-  let len = Random.integer(5, 10)
-  for (let j = 0; j < len; j++) {
-    data.push({
-      id: j,
-      key: Random.word(4, 8),
-      title: Random.ctitle(2, 4),
-    })
-  }
-  return data
-}
+const Mock = require('mockjs');
+const Random = Mock.Random;
 
 module.exports = function () {
   const defaultKey = [
@@ -54,16 +36,14 @@ module.exports = function () {
     data.push({
       id: i,
       key: defaultKey[i].key,
-      title:  defaultKey[i].title,
-      illness: getIllness(i)
+      title:  defaultKey[i].title
     });
   }
   for (let i = index; i < maxIndex; i++) {
     data.push({
       id: i,
       key: Random.word(4, 8),
-      title: Random.ctitle(2, 4),
-      illness: getIllness(i)
+      title: Random.ctitle(2, 4)
     });
   }
   return data
